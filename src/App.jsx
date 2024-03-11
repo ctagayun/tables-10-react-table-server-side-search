@@ -143,7 +143,7 @@ const THEME = {
 };
 const App = () => {
   //Search stuff
-  const [search, setSearch] = React.useState('');
+  const [search, setSearch] = React.useState('react');
 
   const handleSearch = (event) => {
     setSearch(event.target.value);
@@ -339,7 +339,7 @@ const App = () => {
     <> 
       <label htmlFor="search">
         Search by Task:
-        <input id="search" type="text" onChange={handleSearch} />
+        <input id="search" type="text"  onChange={handleSearch} />
       </label>
 
       <Table data={data} theme={theme} select={select} 
